@@ -8,7 +8,16 @@
     body{font-family:system-ui,Segoe UI,Arial;margin:24px;line-height:1.45}
     h1{margin:0 0 8px}
     p{margin:0 0 16px;color:#444}
-    a{display:block;padding:14px 16px;border:1px solid #ddd;border-radius:12px;text-decoration:none;margin:10px 0;color:#111;background:#fff}
+    a{
+      display:block;
+      padding:14px 16px;
+      border:1px solid #ddd;
+      border-radius:12px;
+      text-decoration:none;
+      margin:10px 0;
+      color:#111;
+      background:#fff;
+    }
     a:hover{background:#f6f6f6}
     small{opacity:.75}
   </style>
@@ -17,20 +26,10 @@
   <h1>Niches</h1>
   <p>Pick a niche to browse published entries.</p>
 
-  <!-- IMPORTANT: set KB_BASE to your real GitHub Pages URL for superbyte-knowledgebase -->
-  <!-- Example: https://mejustmeb.github.io/superbyte-knowledgebase -->
-  <script>
-    const KB_BASE = "PASTE_YOUR_KB_PAGES_URL_HERE";
-    const links = [
-      {name:"Auto", desc:"Vehicles, diagnostics, repairs", path:"/entries/auto/"},
-      {name:"Construction", desc:"Builds, repairs, tools, jobsite", path:"/entries/construction/"},
-      {name:"AI", desc:"Automation, code, workflows", path:"/entries/ai/"},
-    ];
-
-    document.write(links.map(x =>
-      `<a href="${KB_BASE}${x.path}"><strong>${x.name}</strong><br><small>${x.desc}</small></a>`
-    ).join(""));
-  </script>
+  <!-- IMPORTANT: these match your actual repo folders: /auto, /construction, /ai -->
+  <a href="./auto/"><strong>Auto</strong><br><small>Vehicles, diagnostics, repairs</small></a>
+  <a href="./construction/"><strong>Construction</strong><br><small>Builds, repairs, tools, jobsite</small></a>
+  <a href="./ai/"><strong>AI</strong><br><small>Automation, code, workflows</small></a>
 
   <p><small>More niches will appear here as we add them.</small></p>
 </body>
